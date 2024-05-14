@@ -1,7 +1,7 @@
 import { DMMF } from '@prisma/generator-helper';
 
-import { GeneratorConfig, Resource } from '../../../../../config/GeneratorConfig';
-import { addEnumImportsFromFields, getTsFieldType } from '../../../../../helpers/models';
+import { GeneratorConfig, Resource } from '../../../../config/GeneratorConfig';
+import { addEnumImportsFromFields, getTsFieldType } from '../../../../helpers/models';
 
 export const generateCreateArgs = (generatorConfig: GeneratorConfig, model: DMMF.Model): Resource => {
   const args = generatorConfig.getServiceArgs(model, 'Create');

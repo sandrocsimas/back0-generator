@@ -3,9 +3,9 @@ import fs from 'fs/promises';
 import { GeneratorOptions, generatorHandler } from '@prisma/generator-helper';
 
 import { GeneratorConfig } from './config/GeneratorConfig';
-import { generateCore } from './generators/core/coreGenerator';
-import { generateDomains } from './generators/domains/domainsGenerator';
-import { generateEnums } from './generators/enums/enumsGenerator';
+import { generateCore } from './generators/coreGenerator';
+import { generateDomains } from './generators/domainsGenerator';
+import { generateEnums } from './generators/enumsGenerator';
 
 generatorHandler({
   onManifest: () => ({
@@ -17,7 +17,6 @@ generatorHandler({
     await fs.writeFile('/Users/sandro/Desktop/options.json', JSON.stringify(options));
 
     const generatorConfig = new GeneratorConfig(options);
-
     await generatorConfig.mkdirs();
 
     await generateCore(generatorConfig);

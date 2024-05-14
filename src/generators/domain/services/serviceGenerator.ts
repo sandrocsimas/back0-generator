@@ -2,9 +2,9 @@ import { DMMF } from '@prisma/generator-helper';
 import pluralize from 'pluralize';
 import { Scope } from 'ts-morph';
 
-import { GeneratorConfig, Resource } from '../../../../config/GeneratorConfig';
-import { getThisPrismaCollection } from '../../../../helpers/models';
-import { getRelativeImportPath } from '../../../../helpers/paths';
+import { GeneratorConfig, Resource } from '../../../config/GeneratorConfig';
+import { getThisPrismaCollection } from '../../../helpers/models';
+import { getRelativeImportPath } from '../../../helpers/paths';
 
 import { generateArgs } from './argsGenerator';
 

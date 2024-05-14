@@ -3,9 +3,9 @@ import { camelCase } from 'lodash';
 import pluralize from 'pluralize';
 import { Scope } from 'ts-morph';
 
-import { GeneratorConfig, Resource } from '../../../../config/GeneratorConfig';
-import { getPrimaryKeyFields, getTsFieldType } from '../../../../helpers/models';
-import { getRelativeImportPath } from '../../../../helpers/paths';
+import { GeneratorConfig, Resource } from '../../../config/GeneratorConfig';
+import { getPrimaryKeyFields, getTsFieldType } from '../../../helpers/models';
+import { getRelativeImportPath } from '../../../helpers/paths';
 
 import { generateObject } from './objectGenerator';
 

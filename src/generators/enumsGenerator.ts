@@ -1,4 +1,4 @@
-import { GeneratorConfig } from '../../config/GeneratorConfig';
+import { GeneratorConfig } from '../config/GeneratorConfig';
 
 export const generateEnums = (generatorConfig: GeneratorConfig): void => {
   generatorConfig.options.dmmf.datamodel.enums.forEach((enumeration) => {

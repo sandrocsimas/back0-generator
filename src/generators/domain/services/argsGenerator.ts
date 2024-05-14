@@ -1,6 +1,6 @@
 import { DMMF } from '@prisma/generator-helper';
 
-import { GeneratorConfig, Resource } from '../../../../config/GeneratorConfig';
+import { GeneratorConfig, Resource } from '../../../config/GeneratorConfig';
 
 import { generateCreateArgs } from './args/createArgsGenerator';
 import { generateDeleteArgs } from './args/deleteArgsGenerator';

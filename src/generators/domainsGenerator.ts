@@ -2,8 +2,8 @@ import path from 'path';
 
 import { Writers } from 'ts-morph';
 
-import { GeneratorConfig, Resource } from '../../config/GeneratorConfig';
-import { getRelativeImportPath } from '../../helpers/paths';
+import { GeneratorConfig, Resource } from '../config/GeneratorConfig';
+import { getRelativeImportPath } from '../helpers/paths';
 
 import { generateDomain } from './domain/domainGenerator';
 

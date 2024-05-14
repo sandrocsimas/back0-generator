@@ -1,14 +1,14 @@
 import { DMMF } from '@prisma/generator-helper';
 import { Scope } from 'ts-morph';
 
-import { GeneratorConfig, Resource } from '../../../../config/GeneratorConfig';
+import { GeneratorConfig, Resource } from '../../../config/GeneratorConfig';
 import {
   addEnumImportsFromFields,
   addGqlScalarImportsFromFields,
   getGqlFieldType,
   getTsFieldType,
   isGqlScalarFieldType,
-} from '../../../../helpers/models';
+} from '../../../helpers/models';
 
 export const generateObject = (generatorConfig: GeneratorConfig, model: DMMF.Model): Resource => {
   const object = generatorConfig.getGraphQlObject(model);

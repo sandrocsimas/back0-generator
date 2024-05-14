@@ -3,7 +3,7 @@ import path from 'path';
 
 import { VariableDeclarationKind, Writers } from 'ts-morph';
 
-import { GeneratorConfig } from '../../config/GeneratorConfig';
+import { GeneratorConfig } from '../config/GeneratorConfig';
 
 export const generateCore = async (generatorConfig: GeneratorConfig): Promise<void> => {
   const prismaDir = path.join(generatorConfig.coreDir, 'prisma');

@@ -4,8 +4,8 @@ import { DMMF } from '@prisma/generator-helper';
 import { camelCase } from 'lodash';
 import { Writers } from 'ts-morph';
 
-import { getRelativeImportPath } from '../../../helpers/paths';
-import { GeneratorConfig, Resource } from '../../../config/GeneratorConfig';
+import { GeneratorConfig, Resource } from '../../config/GeneratorConfig';
+import { getRelativeImportPath } from '../../helpers/paths';
 
 import { generateResolver } from './graphql/resolverGenerator';
 import { generateService } from './services/serviceGenerator';
